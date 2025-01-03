@@ -1,0 +1,254 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+/* Enable smooth scrolling behavior across the page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Optional: Add padding/margins to sections to create space between them */
+section {
+    padding: 100px 20px;
+    margin: 50px 0;
+}
+
+/* Section styling for better readability */
+#achievements, #schedule, #future {
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+/* Logo Styling */
+.logo-container {
+    display: inline-block;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.logo-container:hover .logo {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.logo {
+    width: 250px; /* Adjust size as needed */
+    height: auto;
+    display: block;
+}
+
+header {
+    background-color: #0021a5d3;
+    color: #FFFFFF;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff4d00d4;
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#player-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.player-card {
+    background-color: #FFFFFF;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 200px;
+}
+
+.player-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+footer {
+    background-color: #ffffff;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Achievements Section */
+/* Main achievements section */
+#achievements {
+    display: flex;
+    justify-content: center; /* Center align horizontally */
+    align-items: center; /* Center align vertically */
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    gap: 40px; /* Space between the blocks */
+}
+
+/* Each achievement item */
+.achievement-container {
+    display: flex;
+    flex-direction: row; /* Align image and text horizontally */
+    align-items: center; /* Vertically align image and text */
+    text-align: left; /* Align text left (optional for better appearance) */
+    box-shadow: none; /* Remove box shadow */
+    padding: 20px;
+    border-radius: 10px;
+    background: none; /* No background */
+    width: 350px; /* Set a fixed width for each container */
+    margin: 0; /* Remove margin */
+}
+
+/* Trophy image styling */
+.trophy-image {
+    width: 150px; /* Fixed width for images */
+    height: auto;
+    margin-right: 20px; /* Space between image and text */
+}
+
+/* Text styling for achievements */
+.achievement-text h2 {
+    font-size: 2.5em;
+    font-family: 'Poppins', sans-serif;
+    color: #ff8200; /* Florida Gators orange */
+    margin: 0;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.achievement-text p {
+    font-size: 1.1em;
+    font-family: 'Poppins', sans-serif;
+    color: #000000; /* Florida Gators blue */
+    margin: 5px 0 0;
+}
+
+h2 {
+    font-size: 1.1em;
+    font-family: 'Poppins', sans-serif;
+    color: #000000; /* Florida Gators blue */
+    margin: 5px 0 0;
+}
+
+/* Schedule Section */
+#schedule {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#schedule h2 {
+    font-size: 2.5em;
+    font-family: 'Poppins', sans-serif;
+    color: #ff8200; /* Florida Gators orange */
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Schedule Container */
+.schedule-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Space between the games */
+}
+
+/* Individual Game */
+.game {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+/* Game hover effect */
+.game:hover {
+    transform: scale(1.05);
+}
+
+/* Team Logo */
+.team-logo img {
+    width: 50px;  /* Maximum width */
+    height: auto; /* Adjust height based on width to maintain aspect ratio */
+    max-height: 100px;  /* Limit the height to avoid logos being too tall */
+    object-fit: contain; /* Ensures the entire logo is visible */
+    margin-right: 20px;
+}
+
+/* Game Details */
+.game-details {
+    text-align: left;
+}
+
+.opponent-name {
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    color: #000000; /* Florida Gators blue */
+    margin: 0;
+}
+
+.location, .game-time {
+    font-size: 0.75em;
+    font-family: 'Poppins', sans-serif;
+    color: #555;
+    margin: 5px 0;
+}
+
+.status {
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
+    color: #3ad242; /* Florida Gators orange */
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: center;
+}
+
+
+
